@@ -24,6 +24,8 @@ Procedural Content Generation Framework and other two related plugins
 
 This install will restart your project.
 
+If you copy the tool to your project before install the plugin, it will find file lost.
+
 ### 1.2. Quick start from GitHub
 
 Download the project and add it to the content folder of your project.
@@ -105,7 +107,7 @@ Drag a `BP_PCG_BuildingAndSidewalk_Mix` file in to the level, you will find para
     └── PCG
 ```
 
-under the list after click `BP_PCG_BuildingAndSidewalk_Mix (self)`:
+under the list after clicking `BP_PCG_BuildingAndSidewalk_Mix (self)`:
 
 ```
 ├── Transform [Building's location and rotation control]
@@ -128,11 +130,21 @@ under the list after click `BP_PCG_BuildingAndSidewalk_Mix (self)`:
 ...
 ```
 
+#### Replace the meshes in the PCG generation
 
+if you go to the PCG Graph file in the `PCG` tap, you will find a window open that looks like a blueprint. Go to the right side of those nodes, there is a comment zone called `meshes`, here you can find all the meshes used in the PCG generation, you can replace them with the mesh you want. you can choose the node and press `E` on your keyboard to enable and stop the node functioning. This will help you find the place of this meshes position in the generation.
+
+#### Change items' position in the PCG generation
+
+in the `meshes` comment zone, there is a transform point on the left side of each mesh node. clicking it and you will find the adjusted panel of the meshes. it changes the point's position data. To better understand, there might be multiple points pathing the same nodes, the nodes give each node a different transform randomly by your order. but if you tap the same number to both the max and min blank, it will make a certain transformation as you wish.
+
+#### Edit the items that you want
+
+Zoom out to see all comment zones, you will find many zones across the `meshes` horizontally, which means different groups of the PCG generation. such as the fire ladder and different styles of layers of the building.
 
 ## 3. Guide
 
-> how to use PCG plugin for more creation
+> how to use the PCG plugin for more creation
 
 #### What is it
 
