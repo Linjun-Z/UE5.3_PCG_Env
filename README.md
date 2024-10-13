@@ -28,7 +28,7 @@ If you copy the tool to your project before install the plugin, it will find fil
 
 ### 1.2. Quick start from GitHub
 
-Download the project and add it to the content folder of your project.
+Download the project and add `PCG_Env` folder to the content folder of your project.
 
 > Then follow the same way start from the UE project.
 
@@ -313,7 +313,7 @@ Check the PCG graph and find the style comment zone. Check all the input and out
 
 Finding the `PCG_SubRoof` nodes and debug. 
 
-### Not able to see the node data after press "A".
+### Not able to see the node data after press "".
 
 There might be bugs to see some node's input data, please go to the output node to see the output data.
 
